@@ -1,0 +1,1188 @@
+Model {
+  Name			  "tcsmdl"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  PreLoadFcn		  "cd programs\\simulink_par\nRun_ft_bike\ncd ..\\.."
+  Created		  "Mon Nov 25 22:24:29 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "ywata"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Oct 06 10:50:51 2011"
+  ModelVersionFormat	  "1.%<AutoIncrement:247>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0"
+  StopTime		  "15"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "TSTEP"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  off
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  off
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  off
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  RTWOptions		  "-aEnforceIntegerDowncast=1 -aFoldNonRolledExpr=1 -a"
+"InlineInvariantSignals=1 -aInlineParameters=0 -aLocalBlockOutputs=1 -aRollThr"
+"eshold=5 -aZeroInternalMemoryAtStartup=1 -aZeroExternalMemoryAtStartup=1 -aIn"
+"itFltsAndDblsToZero=1 -aGenerateReport=0 -aGenCodeOnly=0 -aRTWVerbose=1 -aInc"
+"ludeHyperlinkInReport=0 -aLaunchReport=0 -aForceParamTrailComments=0 -aGenera"
+"teComments=1 -aIgnoreCustomStorageClasses=1 -aIncHierarchyInIds=0 -aMaxRTWIdL"
+"en=31 -aShowEliminatedStatements=0 -aPrefixModelToSubsysFcnNames=1 -aIncDataT"
+"ypeInIds=0 -aInsertBlockDesc=0 -aSimulinkBlockComments=1 -aInlinedPrmAccess="
+"\"Literals\"  -aSuppressErrorStatus=0 -aModelReferenceCompliant=1 -aSupportNo"
+"nInlinedSFcns=1 -aSupportContinuousTime=1 -aSupportComplex=1 -aSupportNonFini"
+"te=1 -aSupportAbsoluteTime=1 -aTargetFcnLib=\"ansi_tfl_tmw.mat\" -aMultiInsta"
+"nceERTCode=0 -aLogVarNameModifier=\"rt_\" -aIsPILTarget=0 -aCombineOutputUpda"
+"teFcns=0 -aGenerateASAP2=0 -aGenerateSampleERTMain=0 -aGenerateFullHeader=1 -"
+"aUtilityFuncGeneration=\"Auto\" -aIncludeFileDelimiter=\"Auto\" -aIncludeMdlT"
+"erminateFcn=1 -aPurelyIntegerCode=0 -aERTCustomFileBanners=0 -aRTWCAPIStates="
+"0 -aRTWCAPIParams=0 -aRTWCAPISignals=0 -aMatFileLogging=1 -aGenFloatMathFcnCa"
+"lls=\"ANSI_C\" -aExtModeMexFile=\"ext_comm\" -aExtModeTransport=0 -aExtModeSt"
+"aticAllocSize=1000000 -aExtModeTesting=0 -aExtModeStaticAlloc=0 -aExtMode=0  "
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Lookup
+      InputValues	      "[-4:5]"
+      OutputValues	      " rand(1,10)-0.5"
+      ShowAdditionalParam     off
+      LookUpMeth	      "Interpolation-Extrapolation"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Reference
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TransferFcn
+      Numerator		      "[1]"
+      Denominator	      "[1 2 1]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      TransportDelay
+      DelayTime		      "1"
+      InitialInput	      "0"
+      BufferSize	      "1024"
+      PadeOrder		      "0"
+      TransDelayFeedthrough   off
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "tcsmdl"
+    Location		    [34, 86, 774, 545]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "darkGreen"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "BikeSim S-Function"
+      Ports		      [1, 1]
+      Position		      [330, 39, 430, 101]
+      Priority		      "1"
+      AttributesFormatString  "Vehicle Code: %<VehicleCode>"
+      AncestorBlock	      "Solver_SF/BikeSim S-Function"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "Solver_SF/BikeSim S-Function"
+      SourceType	      "Vehicle math model library"
+      VehicleCode	      "i_i"
+      SIMFILE		      "simfile"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Brake Actuator Model"
+      Ports		      [2, 1]
+      Position		      [140, 163, 235, 267]
+      Orientation	      "left"
+      BackgroundColor	      "magenta"
+      DropShadow	      on
+      NamePlacement	      "alternate"
+      FontName		      "Helvetica 300,  425]"
+      FontSize		      12
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"Brake Actuator Model"
+	Location		[108, 588, 803, 873]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"magenta"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Control Mode"
+	  Position		  [40, 175, 60, 195]
+	  FontName		  "Helvetica 175]6]"
+	  FontSize		  12
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "M/C Pressure"
+	  Position		  [45, 55, 65, 75]
+	  FontName		  "Helvetica40]5]6]"
+	  FontSize		  12
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux1"
+	  Ports			  [1, 2]
+	  Position		  [140, 134, 180, 236]
+	  FontName		  "Helvetica 246]]]"
+	  FontSize		  12
+	  Outputs		  "2"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux2"
+	  Ports			  [1, 2]
+	  Position		  [140, 14, 180, 116]
+	  FontName		  "Helvetica 246]]]"
+	  FontSize		  12
+	  Outputs		  "2"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  Ports			  [2, 1]
+	  Position		  [505, 129, 540, 231]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  Ports			  [2, 1]
+	  Position		  [350, 137, 380, 168]
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [350, 187, 380, 218]
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Transfer Fcn LF"
+	  Position		  [420, 137, 480, 173]
+	  Denominator		  "[0.06 1]"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Transfer Fcn RF"
+	  Position		  [420, 187, 480, 223]
+	  Denominator		  "[0.06 1]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "W/C Pressure"
+	  Position		  [605, 170, 625, 190]
+	  FontName		  "Helvetica5, 160] 35]aR|W/C "
+	  FontSize		  12
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  DstBlock		  "W/C Pressure"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Control Mode"
+	  SrcPort		  1
+	  DstBlock		  "Demux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "Transfer Fcn LF"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Transfer Fcn LF"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  DstBlock		  "Transfer Fcn RF"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Transfer Fcn RF"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  2
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "M/C Pressure"
+	  SrcPort		  1
+	  DstBlock		  "Demux2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux2"
+	  SrcPort		  1
+	  Points		  [135, 0; 0, 105]
+	  DstBlock		  "Product"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux2"
+	  SrcPort		  2
+	  Points		  [105, 0; 0, 105]
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock1"
+      Position		      [465, 390, 485, 410]
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      Ports		      [1, 4]
+      Position		      [485, 28, 490, 112]
+      BackgroundColor	      "black"
+      ShowName		      off
+      FontSize		      12
+      Outputs		      "[1 2 1 2 ]"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      Ports		      [2, 1]
+      Position		      [170, 32, 175, 103]
+      ShowName		      off
+      FontSize		      12
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux4"
+      Ports		      [2, 1]
+      Position		      [590, 51, 595, 89]
+      ShowName		      off
+      FontSize		      12
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Pressure"
+      Ports		      [1]
+      Position		      [25, 200, 55, 230]
+      Orientation	      "left"
+      FontSize		      12
+      Location		      [776, 281, 1091, 472]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "15"
+      YMin		      "-2"
+      YMax		      "4"
+      SaveName		      "ScopeData3"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleTime	      "100"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Slip"
+      Ports		      [1]
+      Position		      [650, 225, 680, 255]
+      FontSize		      12
+      Location		      [442, 545, 763, 748]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-1"
+      YMax		      "2"
+      SaveName		      "ScopeData4"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleTime	      "100"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "TCS Controller"
+      Ports		      [2, 2]
+      Position		      [300, 163, 515, 267]
+      Orientation	      "left"
+      BackgroundColor	      "green"
+      DropShadow	      on
+      FontSize		      12
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"TCS Controller"
+	Location		[101, 446, 902, 808]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"green"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vehicle Velocity"
+	  Position		  [45, 28, 75, 42]
+	  DropShadow		  on
+	  FontSize		  12
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Wheel Slip (F, R)"
+	  Position		  [80, 98, 110, 112]
+	  DropShadow		  on
+	  FontSize		  12
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Decrease Signal"
+	  Position		  [320, 150, 340, 170]
+	  DropShadow		  on
+	  FontSize		  12
+	  Value			  "-1"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Hold Signal"
+	  Position		  [160, 150, 180, 170]
+	  DropShadow		  on
+	  FontSize		  12
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Inclese Signal"
+	  Position		  [155, 50, 175, 70]
+	  DropShadow		  on
+	  FontSize		  12
+	}
+	Block {
+	  BlockType		  Lookup
+	  Name			  "Look-Up\nTable"
+	  Position		  [455, 200, 485, 230]
+	  InputValues		  "[-1,0,0.01,0.05,1,2]"
+	  OutputValues		  "[0,0,0.2,0.2,1.5,1.5]"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "M/C Pressure"
+	  Position		  [245, 245, 275, 275]
+	  Value			  "3"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux2"
+	  Ports			  [2, 1]
+	  Position		  [410, 228, 435, 292]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  Ports			  [2, 1]
+	  Position		  [510, 192, 540, 283]
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Slip OFF"
+	  Position		  [380, 100, 410, 130]
+	  DropShadow		  on
+	  FontSize		  12
+	  Threshold		  "0.05"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Slip ON"
+	  Position		  [265, 90, 295, 120]
+	  DropShadow		  on
+	  FontSize		  12
+	  Threshold		  "0.1"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Speed Limit"
+	  Position		  [505, 97, 540, 133]
+	  DropShadow		  on
+	  FontSize		  12
+	  Threshold		  "100"
+	}
+	Block {
+	  BlockType		  TransportDelay
+	  Name			  "Transport\nDelay"
+	  Position		  [610, 100, 640, 130]
+	  DropShadow		  on
+	  FontSize		  12
+	  DelayTime		  "0.005"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Control Mode (F, R)"
+	  Position		  [700, 105, 720, 125]
+	  FontSize		  12
+	  InitialOutput		  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Pressure"
+	  Position		  [705, 230, 725, 250]
+	  FontSize		  12
+	  Port			  "2"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "Inclese Signal"
+	  SrcPort		  1
+	  Points		  [70, 0]
+	  DstBlock		  "Slip ON"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Slip ON"
+	  SrcPort		  1
+	  DstBlock		  "Slip OFF"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Hold Signal"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, -45]
+	  DstBlock		  "Slip ON"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Speed Limit"
+	  SrcPort		  1
+	  DstBlock		  "Transport\nDelay"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vehicle Velocity"
+	  SrcPort		  1
+	  Points		  [380, 0; 0, 80]
+	  DstBlock		  "Speed Limit"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Wheel Slip (F, R)"
+	  SrcPort		  1
+	  Points		  [105, 0]
+	  Branch {
+	    DstBlock		    "Slip ON"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 35]
+	    Branch {
+	      Points		      [115, 0; 0, -25]
+	      DstBlock		      "Slip OFF"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, 75]
+	      DstBlock		      "Look-Up\nTable"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Slip OFF"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 10]
+	  DstBlock		  "Speed Limit"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Decrease Signal"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    DstBlock		    "Slip OFF"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [110, 0; 0, -55]
+	    DstBlock		    "Speed Limit"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Transport\nDelay"
+	  SrcPort		  1
+	  DstBlock		  "Control Mode (F, R)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Look-Up\nTable"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "Pressure"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux2"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "M/C Pressure"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    Points		    [0, -15]
+	    DstBlock		    "Mux2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 15]
+	    DstBlock		    "Mux2"
+	    DstPort		    2
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Throttle Controller"
+      Ports		      [2, 1]
+      Position		      [235, 298, 445, 362]
+      Orientation	      "left"
+      BackgroundColor	      "yellow"
+      FontSize		      12
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"Throttle Controller"
+	Location		[45, 455, 691, 632]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Engine Throttle"
+	  Position		  [545, 13, 575, 27]
+	  Orientation		  "left"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Slip Ratio"
+	  Position		  [545, 73, 575, 87]
+	  Orientation		  "left"
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [280, 120, 310, 150]
+	  Orientation		  "left"
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux1"
+	  Ports			  [1, 2]
+	  Position		  [505, 43, 510, 112]
+	  Orientation		  "left"
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [190, 32, 210, 88]
+	  Orientation		  "left"
+	  Threshold		  "0.2"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  Position		  [370, 50, 390, 70]
+	  Orientation		  "left"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transfer func"
+	  Ports			  [1, 1]
+	  Position		  [105, 42, 165, 78]
+	  Orientation		  "left"
+	  SourceBlock		  "simulink_extras/Additional\nLinear/Transfer"
+" Fcn\n(with initial outputs)"
+	  SourceType		  "Transfer Function with Initial Outputs"
+	  N			  "[-10]"
+	  D			  "[1  1]"
+	  Y0			  "0"
+	  U0			  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Throttle Reduction"
+	  Position		  [35, 53, 65, 67]
+	  Orientation		  "left"
+	}
+	Line {
+	  SrcBlock		  "Slip Ratio"
+	  SrcPort		  1
+	  DstBlock		  "Demux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  2
+	  Points		  [-170, 0; 0, -35]
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  1
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [-25, 0; 0, -55]
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Transfer func"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Engine Throttle"
+	  SrcPort		  1
+	  Points		  [-210, 0; 0, 20]
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Transfer func"
+	  SrcPort		  1
+	  DstBlock		  "Throttle Reduction"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Time (Sec)"
+      Ports		      [1]
+      Position		      [565, 382, 680, 418]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Vehicle SPD"
+      Ports		      [1]
+      Position		      [645, 54, 675, 86]
+      FontSize		      12
+      Location		      [776, 64, 1090, 270]
+      Open		      on
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-10"
+      YMax		      "150"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "mode"
+      Ports		      [1]
+      Position		      [200, 85, 230, 115]
+      Orientation	      "up"
+      FontSize		      12
+      Location		      [774, 510, 1094, 705]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-1"
+      YMax		      "1"
+      SaveName		      "ScopeData5"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      SampleTime	      "100"
+    }
+    Line {
+      SrcBlock		      "BikeSim S-Function"
+      SrcPort		      1
+      DstBlock		      "Demux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "BikeSim S-Function"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      DstBlock		      "Mux4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      3
+      Points		      [45, 0]
+      Branch {
+	DstBlock		"Mux4"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 110]
+	DstBlock		"TCS Controller"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Mux4"
+      SrcPort		      1
+      DstBlock		      "Vehicle SPD"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      4
+      Points		      [110, 0; 0, 140]
+      Branch {
+	DstBlock		"TCS Controller"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -5]
+	Branch {
+	  Points		  [0, 5]
+	  DstBlock		  "Slip"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 110]
+	  DstBlock		  "Throttle Controller"
+	  DstPort		  2
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "TCS Controller"
+      SrcPort		      1
+      Points		      [-35, 0]
+      Branch {
+	Points			[0, -60]
+	DstBlock		"mode"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Brake Actuator Model"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "TCS Controller"
+      SrcPort		      2
+      DstBlock		      "Brake Actuator Model"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Brake Actuator Model"
+      SrcPort		      1
+      Points		      [-50, 0]
+      Branch {
+	Points			[0, -130]
+	DstBlock		"Mux1"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"Pressure"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      Points		      [65, 0; 0, 275]
+      DstBlock		      "Throttle Controller"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Throttle Controller"
+      SrcPort		      1
+      Points		      [-120, 0; 0, -280]
+      DstBlock		      "Mux1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Clock1"
+      SrcPort		      1
+      DstBlock		      "Time (Sec)"
+      DstPort		      1
+    }
+    Annotation {
+      Name		      "TCS Example for Motorcycle"
+      Position		      [133, 402]
+      BackgroundColor	      "orange"
+      DropShadow	      on
+      FontSize		      14
+      FontWeight	      "bold"
+      FontAngle		      "italic"
+    }
+  }
+}
